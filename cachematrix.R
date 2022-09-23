@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) { # the argument here is a matrix
     #that needs to be inverted
     inv <- NULL
     set <- function(matrA){ # set() generates a matrix based on the given matrA
-        x <<- matrA
+        x <<- matrA   # the value x is set in the global environment
         inv <<- NULL
     }
     get <- function() x # get() returns matrA (now x) -- no arguments
